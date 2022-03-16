@@ -1,0 +1,37 @@
+<!--
+KALAI Mohamed Hedi
+SATOURI Khaireddine
+L3 Informatique
+-->
+
+<%- include('layouts/head.ejs')%>
+
+    <body>
+        <%- include('layouts/navigation.ejs')%>
+            <div class="container">
+                <div class="row">
+                    <%- include('layouts/sidebar.ejs')%>
+                        <div class="col-lg-9">
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1>
+                                        <%= prd.titre %>
+                                    </h1>
+                                    <p><img class="image_taille" src="<%= prd.image%>" /></p>
+                                    <h2>Prix:</h2>
+                                    <p>€
+                                        <%= prd.prix%>
+                                    </p>
+                                    <h2>Description:</h2>
+                                    <p>
+                                        <%= prd.description%>
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <%- include('layouts/footer.ejs')%>

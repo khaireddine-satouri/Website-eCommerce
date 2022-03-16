@@ -1,0 +1,44 @@
+<!--
+KALAI Mohamed Hedi
+SATOURI Khaireddine
+L3 Informatique
+-->
+
+<%- include('layouts/head.ejs')%>
+
+    <body>
+        <%- include('layouts/navigation.ejs')%>
+            <div class="container">
+                <div class="row">
+                    <%- include('layouts/sidebar.ejs')%>
+                        <div class="col-lg-9">
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2>Ajout d'un produit :</h2>
+                                    <form action="/admin/ajout-prod" method="POST">
+                                        <div class="form-group">
+                                            <label for="titre">Titre :</label>
+                                            <input class="form-control" id="titre" name="titre">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="prix">Prix :</label>
+                                            <input class="form-control" id="prix" name="prix">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="image">Lien de l'image :</label>
+                                            <input class="form-control" id="image" name="image">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">Description :</label>
+                                            <textarea class="form-control" name="description" id="description"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                                    </form> <br>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <%- include('layouts/footer.ejs')%>

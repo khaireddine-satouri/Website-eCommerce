@@ -1,0 +1,32 @@
+/*
+KALAI Mohamed Hedi
+SATOURI Khaireddine
+L3 Informatique
+*/
+
+body {
+    padding-top: 56px;
+}
+
+#logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.image_taille {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.btn {
+    display: block;
+    align-items: center;
+    width: 5.5cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col-lg-4:hover {
+    padding: 0px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}

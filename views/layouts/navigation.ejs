@@ -1,0 +1,27 @@
+<!--
+KALAI Mohamed Hedi
+SATOURI Khaireddine
+L3 Informatique
+-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img id="logo" src="../images/logo.png" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item <%= path==='/' ? 'active' : ''%>">
+                    <a class="nav-link" href="/">Accueil</a>
+                </li>
+                <li class="nav-item <%= path==='/admin-page' ? 'active' : ''%>">
+                    <a class="nav-link" href="/admin-page">Admin</a>
+                </li>
+                <li class="nav-item <%= path==='/admin/ajout-prod' ? 'active' : ''%>">
+                    <a class="nav-link" href="/admin/ajout-prod">Ajout d'un produit</a>
+                </li>
+                <li class="nav-item <%= path==='/contact' ? 'active' : ''%>">
+                    <a class="nav-link" href="/contact">Contactez nous</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

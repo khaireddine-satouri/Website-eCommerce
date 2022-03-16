@@ -1,0 +1,44 @@
+<!--
+KALAI Mohamed Hedi
+SATOURI Khaireddine
+L3 Informatique
+-->
+
+<%- include('layouts/head.ejs')%>
+
+    <body>
+        <%- include('layouts/navigation.ejs')%>
+            <div class="container">
+                <div class="row">
+                    <%- include('layouts/sidebar.ejs')%>
+                        <div class="col-lg-9">
+                            <br>
+                            <br>
+                            <div class="row">
+                                <% for(let produit of produits) {%>
+                                    <% if(produit.prix<10) {%>
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                            <div class="card h-100">
+                                                <a href="/produits/<%=produit._id%>"><img class="card-img-top" src="<%= produit.image%>" alt=""></a>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">
+                                                        <a href="/produits/<%=produit._id%>">
+                                                            <%= produit.titre%>
+                                                        </a>
+                                                    </h4>
+                                                    <h5>$
+                                                        <%= produit.prix%>
+                                                    </h5>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <a class="btn btn-primary" href="/produits/<%=produit._id%>" role="button">Voir Plus</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <%}%>
+                                            <%}%>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <%- include('layouts/footer.ejs')%>
