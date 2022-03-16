@@ -9,7 +9,7 @@ const MongoClient = require('mongodb').MongoClient;
 let _db;
 
 const mongoConnect = function(callback) {
-    MongoClient.connect('mongodb+srv://kalai_satouri:admin@cluster0.zqhav.mongodb.net/antivirus?retryWrites=true&w=majority', { useUnifiedTopology: true })
+    MongoClient.connect('mongodb+srv://*****:*****@cluster0.zqhav.mongodb.net/antivirus?retryWrites=true&w=majority', { useUnifiedTopology: true })
         .then(client => {
             _db = client.db('antivirus');
             callback();
