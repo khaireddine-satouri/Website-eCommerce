@@ -18,7 +18,7 @@ const mongoConnect = require('./util/database').mongoConnect;
 var app = express();
 
 mongoConnect(() => {
-    app.connect('mongodb+srv://kalai_satouri:admin@cluster0.zqhav.mongodb.net/antivirus?retryWrites=true&w=majority');
+    app.connect('mongodb+srv://*****:****@cluster0.zqhav.mongodb.net/antivirus?retryWrites=true&w=majority');
 })
 
 // view engine setup
